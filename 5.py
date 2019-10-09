@@ -46,9 +46,9 @@ print(type(table))
 print
 print(table)('-----------------------------------')
 
-print'-----------------------------------')name")
+print('-----------------------------------')
 
-table=soup.find(id="(
+table=soup.find(id="name")
 print(table)
 
 print('-----------------------------------')

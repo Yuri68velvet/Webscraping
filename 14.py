@@ -1,36 +1,36 @@
 from bs4 import BeautifulSoup
 from urllib.request import urlopen
 
-# url='https://www.simplilearn.com/resources'
+url='https://www.simplilearn.com/resources'
 
-# webpage=urlopen(url)
+webpage=urlopen(url)
 
-# sl_soup=BeautifulSoup(webpage,'html.parser')
+sl_soup=BeautifulSoup(webpage,'html.parser')
 
-# webpage.close()
+webpage.close()
 
-# # print(sl_soup.contents)
+print(sl_soup.contents)
 
-# # print(sl_soup.prettify())
+print(sl_soup.prettify())
 
-# print('-------------title----------------')
+print('-------------title----------------')
 
-# print(sl_soup.title)
+print(sl_soup.title)
 
-# print('----------------href-------------------')
+print('----------------href-------------------')
 
-# for href in sl_soup.findAll('a',href=True):
-#     print(href["href"])
-
-
-# print('------------------find h2------------------------------')
-
-# for heading in sl_soup.findAll("h2"):
-#     print(heading.string)
+for href in sl_soup.findAll('a',href=True):
+    print(href["href"])
 
 
-# for heading4 in sl_soup.findAll("h4"):
-#     print(heading4.string)
+print('------------------find h2------------------------------')
+
+for heading in sl_soup.findAll("h2"):
+    print(heading.string)
+
+
+for heading4 in sl_soup.findAll("h4"):
+    print(heading4.string)
 
 
 url2="https://www.simplilearn.com/what-is-tensorflow-article?source=frs_home"
